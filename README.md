@@ -4,7 +4,7 @@ Chemo Comfort is a portable, low-cost embedded diagnostic device for the early, 
 
 Built as a project for **BECE403E – Embedded System Design**, School of Electronics Engineering, VIT Chennai (Nov 2025).
 
-> R. Gopikasree (23BEC1013), Kirthana S (23BEC1412) — Guide: Dr. V. Prakash
+> R. Gopikasree (23BEC1013), Kirthana S (23BEC1412), Joshitha G (23BEC1478) — Guide: Dr. V. Prakash
 
 ---
 
@@ -85,12 +85,11 @@ ChemoComfort-CIPN-Wearable/
 │   │   └── taxane.csv                       # Taxane-specific clinical/sensory dataset
 │   └── model/
 │       └── preproc_params.json              # Imputer medians + scaler mean/scale (5 features)
-└── hardware/
-    └── kicad/
-        ├── esd_pcb_design.kicad_pro         # KiCad project file
-        ├── esd_pcb_design.kicad_sch         # Schematic
-        ├── esd_pcb_design.kicad_pcb         # PCB layout
-        └── esd_pcb_design.kicad_prl         # Local project settings
+└── PCB/
+     └──esd_pcb_design.kicad_pro         # KiCad project file
+     └── esd_pcb_design.kicad_sch         # Schematic
+     └── esd_pcb_design.kicad_pcb         # PCB layout
+     └── esd_pcb_design.kicad_prl         # Local project settings
 ```
 
 > The full embedded systems project report is versioned in `docs/Chemo_Comfort_Project_Report.pdf`.
@@ -108,7 +107,7 @@ ChemoComfort-CIPN-Wearable/
 | 0.96" OLED (I²C, 128×64) | Questionnaire, progress, and result display |
 | 5× push buttons | 4 questionnaire options + 1 reset/response |
 
-Schematic and PCB layout are in [`hardware/kicad/`](hardware/kicad/) — open `esd_pcb_design.kicad_pro` in KiCad (v8.x recommended) to view/edit.
+Schematic and PCB layout are in [`PCB`](PCB/) — open `esd_pcb_design.kicad_pro` in KiCad (v8.x recommended) to view/edit.
 
 **Estimated BOM cost:** ≈ ₹1,700–1,800 (full breakdown in the project report).
 
